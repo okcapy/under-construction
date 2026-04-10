@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite'
 import { createHtmlPlugin } from 'vite-plugin-html'
-import { siGithub } from 'simple-icons'
+import { siGithub, siX } from 'simple-icons'
 
 export default defineConfig({
   root: 'src',
@@ -12,7 +12,8 @@ export default defineConfig({
     createHtmlPlugin({
       inject: {
         data: {
-          githubIconPath: siGithub.path
+          githubIconPath: siGithub.path,
+          xIconPath: siX.path
         }
       }
     })
