@@ -1,0 +1,23 @@
+{
+  "name": "okcapy-under-construction",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://okcapy.xyz",
+  "author": {
+    "name": "CypherMason",
+    "email": "cyphermason@proton.me",
+    "url": "https://github.com/cyphermason"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.0.8",
+    "vite-plugin-html": "^3.2.2"
+  },
+  "dependencies": {
+    "simple-icons": "^16.15.0"
+  }
+}

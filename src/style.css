@@ -1,0 +1,138 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #f5efe6;
+  --card: #fff9f0;
+  --accent: #c07a3a;
+  --text: #3d2b1f;
+  --muted: #a08060;
+  --border: #e8d5b7;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg);
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--text);
+}
+
+main {
+  padding: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 1.5rem;
+  padding: 3rem 4rem;
+  text-align: center;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 4px 24px rgba(100, 60, 20, 0.08);
+}
+
+.capy-img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--border);
+  margin-bottom: 1.75rem;
+}
+
+/* sm */
+@media (min-width: 480px) {
+  .capy-img { width: 180px; height: 180px; }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .capy-img { width: 220px; height: 220px; }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .capy-img { width: 260px; height: 260px; }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .capy-img { width: 300px; height: 300px; }
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: normal;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.05rem;
+  color: var(--muted);
+  margin-bottom: 1.75rem;
+  font-style: italic;
+}
+
+.status {
+  display: inline-block;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--accent);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+}
+
+.github-btn {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+
+.github-btn:hover {
+  background: var(--text);
+  color: var(--bg);
+  border-color: var(--text);
+}
+
+.github-btn svg {
+  width: 1.4rem;
+  height: 1.4rem;
+  fill: currentColor;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 2.5rem 2rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
